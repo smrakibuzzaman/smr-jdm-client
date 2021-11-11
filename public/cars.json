@@ -1,0 +1,73 @@
+[
+    {
+        "key": "smr01",
+        "name": "Toyota Rav4",
+        "description": "4 Cylinder In-Line/2487 cc, 8-speed(Auto), Petrol-Electric.",
+        "image": "https://iili.io/5VpiWF.jpg",
+        "price": "8500000"
+    },
+    {
+        "key": "smr02",
+        "name": "Toyota Rush",
+        "description": "4 Cylinder In-Line/1496 cc, 4-speed(Auto), Petrol/Diesel.",
+        "image": "https://iili.io/5VpZ0J.jpg",
+        "price": "3800000"
+    },
+    {
+        "key": "smr03",
+        "name": "Toyota Avanza",
+        "description": "4 Cylinder In-Line/1496 cc, 4-speed(Auto), Petrol.",
+        "image": "https://iili.io/5VynbS.jpg",
+        "price": "3250000"
+    },
+    {
+        "key": "smr04",
+        "name": "Toyota Camry Hybrid",
+        "description": "4 Cylinder In-Line/2487 cc, 8-speed(Auto), Petrol-Electric.",
+        "image": "https://iili.io/5Vyxz7.jpg",
+        "price": "9500000"
+    },
+    {
+        "key": "smr05",
+        "name": "Toyota Corolla Altis",
+        "description": "4 Cylinder In-Line/1798 cc, 4-Speed(Auto), Petrol-Electric. ",
+        "image": "https://iili.io/5Vyuqu.jpg",
+        "price": "4500000"
+    },
+    {
+        "key": "smr06",
+        "name": "Toyota Yaris",
+        "description": "4 Cylinder In-Line/1329 cc, 7-Speed(Auto), Petrol-Hybrid(Electric).",
+        "image": "https://iili.io/5VyRgj.jpg",
+        "price": "2950000"
+    },
+    {
+        "key": "smr07",
+        "name": "Toyota Harrier",
+        "description": "4 Cylinder In-Line/2493 cc, 8-speed(CVT), Petrol-Electric.",
+        "image": "https://iili.io/5VyELF.jpg",
+        "price": "8050000"
+    },
+    {
+        "key": "smr08",
+        "name": "Toyota Prado",
+        "description": "4 Cylinder In-Line/2982 cc, 5-speed(Auto), Diesel.",
+        "image": "https://iili.io/5VyvLX.jpg",
+        "price": "21200000"
+    },
+    {
+        "key": "smr09",
+        "name": "Toyota Fortuner",
+        "description": "4 Cylinder In-Line/2694 cc, 6-Speed(Auto), Petrol-Hybrid(Electric).",
+        "image": "https://iili.io/5VySBn.jpg",
+        "price": "13701000"
+    },
+    {
+        "key": "smr10",
+        "name": "Toyota Crown ROWEN",
+        "description": "4 Cylinder In-Line/2997 cc, 8-Speed(Auto), Petrol.",
+        "image": "https://iili.io/5Vy42f.jpg",
+        "price": "11050000"
+    }
+    
+]
