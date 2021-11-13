@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const NewArrivals = () => {
    const [newCars, setNewCars] =useState([]);
    useEffect(()=>{
-       fetch("/cars.json")
+       fetch("http://localhost:5000/carCollections")
        .then(res=>res.json())
        .then(data=>setNewCars(data))
    },[])
@@ -40,7 +41,8 @@ const NewArrivals = () => {
                 </Card.Body>
                 
                 <Card.Body>
-                   <button style={{ backgroundColor: '#890717'}} type="button" class="btn text-light">Book Now</button> 
+                  <Link to={`confirmOrder/${newCar?._id}`}> <button style={{ backgroundColor: '#890717'}} type="button" class="btn text-light">Buy Now</button> </Link>
+                    
                  
                   
                 </Card.Body>

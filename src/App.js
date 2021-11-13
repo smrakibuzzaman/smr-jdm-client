@@ -13,9 +13,12 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ExploreVehicles from "./components/ExploreVehicles/ExploreVehicles";
 import Navigation from "./components/SharedComponents/Navigation";
 import AuthProvider from "./contexts/AuthProvider";
-import PrivateRoute from "./PrivateRoute/PrivateRoute";
-import initializeAuthentication from "./firebase/firebase.auth";
-initializeAuthentication()
+import ConfirmOrder from "./components/ConfirmOrder/ConfirmOrder";
+import MyOrders from "./components/MyOrders/MyOrders";
+import AddCars from "./components/AddCars/AddCars";
+import DashBoard from "./components/DashBoard/DashBoard";
+
+
 
 
 function App() {
@@ -38,13 +41,21 @@ function App() {
 <Home></Home>
         </Route>
 
-        <PrivateRoute path="/login"> 
+        <Route path="/login"> 
 <Login></Login>
-</PrivateRoute>
+</Route>
 
-        <PrivateRoute  path="/register"> 
+        <Route  path="/register"> 
 <Register></Register>
-</PrivateRoute>
+</Route>
+
+        <Route  path="/confirmOrder/:carId"> 
+<ConfirmOrder></ConfirmOrder>
+</Route>
+
+        <Route  path="/myOrders"> 
+<MyOrders></MyOrders>
+</Route>
 
         <Route path="/aboutUs"> 
 <AboutUs></AboutUs>
@@ -52,6 +63,14 @@ function App() {
 
         <Route path="/exploreVehicles"> 
 <ExploreVehicles></ExploreVehicles>
+        </Route>
+
+        <Route path="/addCars"> 
+<AddCars></AddCars>
+        </Route>
+
+        <Route path="/dashBoard"> 
+<DashBoard></DashBoard>
         </Route>
 
 
