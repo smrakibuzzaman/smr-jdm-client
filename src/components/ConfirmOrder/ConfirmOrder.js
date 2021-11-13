@@ -9,7 +9,7 @@ const ConfirmOrder = () => {
     const {carId} = useParams();
     const email=localStorage.getItem("email");
     useEffect(() => {
-        fetch(`http://localhost:5000/carOrder/${carId}`)
+        fetch(`https://whispering-headland-30788.herokuapp.com/carOrder/${carId}`)
           .then((res) => res.json())
           .then((data) => setCar(data));
       }, []);
@@ -17,7 +17,7 @@ const ConfirmOrder = () => {
 
       const onSubmit = data => {
         data.email=email;
-        fetch("http://localhost:5000/confirmedCar",{
+        fetch("https://whispering-headland-30788.herokuapp.com/confirmedCar",{
             method: 'POST',
             headers:{'Content-Type': 'application/json'},
             body: JSON.stringify(data)

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ExploreVehicles = () => {
     const [allCars, setAllCars] =useState([]);
     useEffect(()=>{
-        fetch("http://localhost:5000/carCollections")
+        fetch("https://whispering-headland-30788.herokuapp.com/carCollections")
         .then(res=>res.json())
         .then(data=>setAllCars(data))
     },[])

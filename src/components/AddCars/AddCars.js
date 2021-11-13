@@ -6,7 +6,7 @@ const AddCars = () => {
 
     const onSubmit = data => {
        
-        fetch('http://localhost:5000/addCars',{
+        fetch('https://whispering-headland-30788.herokuapp.com/addCars',{
             method: 'POST',
             headers:{'Content-Type': 'application/json'},
             body: JSON.stringify(data)

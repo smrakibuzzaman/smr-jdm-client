@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [isdelete, setIsDelete] = useState(false);
     
         useEffect(()=>{
-    fetch(`http://localhost:5000/userOrders/${email}`)
+    fetch(`https://whispering-headland-30788.herokuapp.com/userOrders/${email}`)
     .then(res=>res.json())
     .then(result=>setUserOrders(result))
         },[isdelete])
@@ -16,7 +16,7 @@ const MyOrders = () => {
       
     
        const handleRemove= (id) => {
-    fetch(`http://localhost:5000/removeOrder/${id}`,{
+    fetch(`https://whispering-headland-30788.herokuapp.com/removeOrder/${id}`,{
         method: "DELETE",
         headers:{'Content-Type': 'application/json'}
     })

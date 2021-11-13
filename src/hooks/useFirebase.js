@@ -1,5 +1,6 @@
 import { getAuth, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth";
 import { useEffect, useState } from "react";
+import { set } from "react-hook-form";
 
 
 import initializeAuthentication from './../firebase/firebase.auth';
@@ -94,7 +95,7 @@ const setNewUser = ()=> {
 
 const saveUser = (email, displayName) => {
   const user = {email, displayName}
-  fetch("http://localhost:5000/users", {
+  fetch("https://whispering-headland-30788.herokuapp.com/users", {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify(user),
@@ -132,17 +133,11 @@ const logOut =()=> {
 
 
 useEffect(() => {
-  fetch(`http://localhost:5000/users/${user?.email}`)
+  fetch(`https://whispering-headland-30788.herokuapp.com/users/${user?.email}`)
     .then((res) => res.json())
-    .then((data) => {
-      if (data[0]?.role === "admin") {
-        setIsAdmin(true);
-      } else {
-        setIsAdmin(false);
-      }
-    });
+    .then((data) => setIsAdmin(data.admin));
 }, [user?.email]);
-console.log(isAdmin);
+
 
 
 useEffect(()=>{

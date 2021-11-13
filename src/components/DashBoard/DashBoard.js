@@ -50,9 +50,7 @@ const DashBoard = () => {
                 <Link to={`${url}/makeAdmin`}>
                   <li className="dashboard-menu">Make Admin</li>
                 </Link>
-                <Link to={`${url}/manageServices`}>
-                  <li className="dashboard-menu">Manage Service</li>
-                </Link>
+              
                 <Link to={`${url}/logOut`}>
                 <li className="dashboard-menu mt-5">Log Out</li>
               </Link>

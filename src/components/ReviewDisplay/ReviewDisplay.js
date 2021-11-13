@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 const ReviewDisplay = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(()=>{
-fetch('http://localhost:5000/review')
+fetch('https://whispering-headland-30788.herokuapp.com/review')
 .then(res=>res.json())
 .then(result => setReviews(result))
     },[])
